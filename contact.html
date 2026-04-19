@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <h2 class="logo">ShopEasy</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Login</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<h1 class="center">Login</h1>
+
+<form onsubmit="return validateForm()" class="form">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <input type="text" id="email" placeholder="Enter Email" required>
+    <input type="text" id="phone" placeholder="Enter Phone" required>
+    <input type="password" id="password" placeholder="Enter Password" required>
+    <button type="submit">Login</button>
+</form>
+
+</body>
+</html>

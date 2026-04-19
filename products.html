@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <h2 class="logo">ShopEasy</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart<span id="cartBadge" style="display:none; background:red; color:white; border-radius:50%; padding:2px 7px; font-size:12px;"></span></a>
+        <a href="contact.html">Login</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<h1 class="center">Shop by Category</h1>
+
+<div id="categorySection" class="product-container">
+    <div class="card" onclick="openCategory('men')">
+        <h2>Men</h2>
+    </div>
+    <div class="card" onclick="openCategory('women')">
+        <h2>Women</h2>
+    </div>
+    <div class="card" onclick="openCategory('kids')">
+        <h2>Kids</h2>
+    </div>
+</div>
+
+<!--MEN-->
+<div id="men" class="product-container category" style="display:none;">
+    <div style="width:100%; text-align:center;">
+        <button onclick="goBack()">⬅ Back to Categories</button>
+        <h2>Men's Collection</h2>
+    </div>
+
+    <div class="card">
+        <img src="image/shoes.jpg" alt="Shoes">
+        <h3>Running Shoes</h3>
+        <p>₹6,999</p>
+        <button onclick="addToCart('Running Shoes', 6999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/watch.jpg" alt="Watch">
+        <h3>Casual Watch</h3>
+        <p>₹79,999</p>
+        <button onclick="addToCart('Casual Watch', 79999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/men_tshirt.jpg" alt="T-Shirt">
+        <h3>Men's T-Shirt</h3>
+        <p>₹4,099</p>
+        <button onclick="addToCart('Mens T-Shirt', 4099)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/mens_jeans.jpg" alt="Jeans">
+        <h3>Slim Fit Jeans</h3>
+        <p>₹7,299</p>
+        <button onclick="addToCart('Slim Fit Jeans', 7299)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/mens_jacket.jpg" alt="Jacket">
+        <h3>Bomber Jacket</h3>
+        <p>₹2,499</p>
+        <button onclick="addToCart('Bomber Jacket', 2499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/mens_sunglasses.jpg" alt="Sunglasses">
+        <h3>Sunglasses</h3>
+        <p>₹9,899</p>
+        <button onclick="addToCart('Sunglasses', 9899)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/mens_wallet.jpg" alt="Wallet">
+        <h3>Leather Wallet</h3>
+        <p>₹3,899</p>
+        <button onclick="addToCart('Leather Wallet', 3899)">Add to Cart</button>
+    </div>
+</div>
+
+<!--WOMEN-->
+<div id="women" class="product-container category" style="display:none;">
+    <div style="width:100%; text-align:center;">
+        <button onclick="goBack()">⬅ Back to Categories</button>
+        <h2>Women's Collection</h2>
+    </div>
+
+    <div class="card">
+        <img src="image/womens_kurti.jpg" alt="Kurti">
+        <h3>Floral Kurti</h3>
+        <p>₹1,199</p>
+        <button onclick="addToCart('Floral Kurti', 1199)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/womens_saree.jpg" alt="Saree">
+        <h3>Silk Saree</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Silk Saree', 3499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/womens_handbag.jpg" alt="Handbag">
+        <h3>Designer Handbag</h3>
+        <p>₹1,999</p>
+        <button onclick="addToCart('Designer Handbag', 1999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/womens_heels.jpg" alt="Heels">
+        <h3>Block Heels</h3>
+        <p>₹14,299</p>
+        <button onclick="addToCart('Block Heels', 14299)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/womens_earrings.jpg" alt="Earrings">
+        <h3>Gold Earrings</h3>
+        <p>₹89,949</p>
+        <button onclick="addToCart('Gold Earrings', 89949)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/womens_dupatta.jpg" alt="Dupatta">
+        <h3>Embroidered Dupatta</h3>
+        <p>₹2,499</p>
+        <button onclick="addToCart('Embroidered Dupatta', 2499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/womens_skincare.jpg" alt="Skincare">
+        <h3>Skincare Kit</h3>
+        <p>₹2,499</p>
+        <button onclick="addToCart('Skincare Kit', 2499)">Add to Cart</button>
+    </div>
+</div>
+
+<!--KIDS-->
+<div id="kids" class="product-container category" style="display:none;">
+    <div style="width:100%; text-align:center;">
+        <button onclick="goBack()">⬅ Back to Categories</button>
+        <h2>Kids' Collection</h2>
+    </div>
+
+    <div class="card">
+        <img src="image/harrypotter.jpg" alt="Harry Potter">
+        <h3>Harry Potter Books</h3>
+        <p>₹9,000</p>
+        <button onclick="addToCart('Books', 9000)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/tabletennis.jpg" alt="Table Tennis">
+        <h3>Table Tennis Racket</h3>
+        <p>₹4,000</p>
+        <button onclick="addToCart('Racket', 4000)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/kids_lego.jpg" alt="Lego">
+        <h3>LEGO Set</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('LEGO Set', 3999)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/kids_backpack.jpeg" alt="School Bag">
+        <h3>School Backpack</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart('School Backpack', 1299)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/kids_cycle.jpg" alt="Cycle">
+        <h3>Kids' Bicycle</h3>
+        <p>₹7,499</p>
+        <button onclick="addToCart('Kids Bicycle', 7499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/kids_artkit.jpg" alt="Art Kit">
+        <h3>Art & Craft Kit</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Art Craft Kit', 499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="image/kids_puzzle.jpg" alt="Puzzle">
+        <h3>Jigsaw Puzzle</h3>
+        <p>₹649</p>
+        <button onclick="addToCart('Jigsaw Puzzle', 649)">Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>

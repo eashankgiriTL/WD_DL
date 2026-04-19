@@ -1,0 +1,224 @@
+/* Primary: #2874f0 (blue) */
+/* Accent: #ff9f00 (yellow + orange) */
+/* Background: #f1f3f6 */
+/* Cards: #ffffff */
+/* Text: #212121 */
+
+body{
+    margin: 0;
+    font-family: Arial;
+    background: #f1f3f6;
+    color: #212121;
+}
+
+.navbar{
+    background: #2874f0;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: #ff9f00;
+    transition: 0.2s;
+}
+
+.logo{
+    color: white;
+}
+
+.center{
+    text-align: center;
+    color: #212121;
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card h3{
+    color: #212121;
+    margin: 10px 0 5px;
+}
+
+.card p{
+    color: #388e3c;
+    font-weight: bold;
+    margin: 5px 0 10px;
+}
+
+.card button{
+    background: #ff9f00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.card button:hover{
+    background: #e65c00;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(40, 116, 240, 0.3);
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 40px auto;
+    gap: 12px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+.form input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form input:focus{
+    outline: none;
+    border-color: #2874f0;
+}
+
+.form button{
+    background: #ff9f00;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form button:hover{
+    background: #e65c00;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+table th{
+    background: #2874f0;
+    color: white;
+    padding: 12px;
+}
+
+table td{
+    padding: 10px;
+    border-bottom: 1px solid #f1f3f6;
+    text-align: center;
+}
+
+table button{
+    background: #ff9f00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+table button:hover{
+    background: #e65c00;
+}
+
+.about{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.hero{
+    background: linear-gradient(135deg, #2874f0, #1a4fa0);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    color: #ff9f00;
+    font-weight: bold;
+}
+
+.marquee{
+    background: #ff9f00;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* BACK BUTTON */
+button[onclick="goBack()"]{
+    background: #2874f0;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+button[onclick="goBack()"]:hover{
+    background: #1a4fa0;
+}
